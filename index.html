@@ -262,7 +262,7 @@
             document.getElementById("title").innerHTML = language == "id" ? "Harap isi detail berikut untuk menghubungkan Anda kepada tim Customer Support kami 😊" : "Please fill in the following details to connect you to our Customer Support team 😊"
             document.getElementById("name-header").innerHTML = language == "id" ? "Nama" : "Name"
             document.getElementById("email-header").innerHTML = language == "id" ? "Email" : "Email"
-            document.getElementById("submit-button").value = language == "id" ? "Kirim" : "Submit"
+            document.getElementById("submit-button").value = language == "id" ? "Lanjut" : "Continue"
         });
 
         function back() {
@@ -354,7 +354,7 @@
                         // phone.disabled = true;
                         // country.disabled = true;
                         // games.disabled = true;
-                        // submit.disabled = true;
+                         submit.disabled = true;
 
                         
                         var requestOptions = {
@@ -397,7 +397,7 @@
                         // phone.disabled = true;
                         // country.disabled = true;
                         // games.disabled = true;
-                        // submit.disabled = true;
+                        submit.disabled = true;
                         // data.attachmentToken = ""
                         console.log(data)
                         window.parent.postMessage(
@@ -422,7 +422,7 @@
                     // phone.disabled = true;
                     // country.disabled = true;
                     // games.disabled = true;
-                    // submit.disabled = true;
+                    submit.disabled = true;
                     // message.disabled = true;
                     console.log("File not uploaded", e)
                     data.attachmentToken = ""
@@ -473,7 +473,7 @@
                 oninput="emailHandler()" required>
             </div>
             
-            <input type="button" value="Kirim" id="submit-button" onclick="submit()"
+            <input type="button" value="Lanjut" id="submit-button" onclick="submit()"
                 style="max-width: 60%;margin: 15px auto;background-color: #385072;color: #ffffff"
                 class="btn btn-primary center" />
         </div>
